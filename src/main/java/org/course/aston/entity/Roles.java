@@ -1,15 +1,15 @@
 package org.course.aston.entity;
 
 public class Roles {
-    private int roleNameID;
+    private Long roleNameID;
     private String roleName;
 
-    public Roles(int roleNameID, String roleName) {
+    public Roles(Long roleNameID, String roleName) {
         this.roleNameID = roleNameID;
         this.roleName = roleName;
     }
 
-    public int getRoleNameID() {
+    public Long getRoleNameID() {
         return roleNameID;
     }
 

@@ -1,4 +1,4 @@
-package org.course.aston.dbConnection;
+package org.course.aston.dbconnection;
 
 import org.course.aston.util.PropertiesUtil;
 

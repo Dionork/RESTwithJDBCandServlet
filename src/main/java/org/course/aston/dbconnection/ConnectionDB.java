@@ -1,4 +1,4 @@
-package org.course.aston.dbConnection;
+package org.course.aston.dbconnection;
 
 import java.sql.Connection;
 import java.sql.SQLException;

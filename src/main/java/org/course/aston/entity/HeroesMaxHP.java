@@ -1,21 +1,21 @@
 package org.course.aston.entity;
 
 public class HeroesMaxHP {
-    private int heroesMaxHpID;
-    private int heroID;
+    private Long heroesMaxHpID;
+    private Long heroID;
     private int maxHp;
 
-    public HeroesMaxHP(int heroesMaxHpID, int heroID, int maxHp) {
+    public HeroesMaxHP(Long heroesMaxHpID, Long heroID, int maxHp) {
         this.heroesMaxHpID = heroesMaxHpID;
         this.heroID = heroID;
         this.maxHp = maxHp;
     }
 
-    public int getHeroesMaxHpID() {
+    public Long getHeroesMaxHpID() {
         return heroesMaxHpID;
     }
 
-    public int getHeroID() {
+    public Long getHeroID() {
         return heroID;
     }
 

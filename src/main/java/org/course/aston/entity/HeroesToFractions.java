@@ -1,37 +1,37 @@
 package org.course.aston.entity;
 
 public class HeroesToFractions {
-    private int heroesToFractionsID;
-    private int heroID;
-    private int fractionID;
+    private Long heroesToFractionsID;
+    private Long heroID;
+    private Long fractionID;
 
-    public HeroesToFractions(int heroesToFractionsID, int heroID, int fractionID) {
+    public HeroesToFractions(Long heroesToFractionsID, Long heroID, Long fractionID) {
         this.heroesToFractionsID = heroesToFractionsID;
         this.heroID = heroID;
         this.fractionID = fractionID;
     }
 
-    public int getHeroesToFractionsID() {
+    public Long getHeroesToFractionsID() {
         return heroesToFractionsID;
     }
 
-    public int getHeroID() {
+    public Long getHeroID() {
         return heroID;
     }
 
-    public int getFractionID() {
+    public Long getFractionID() {
         return fractionID;
     }
 
-    public void setHeroesToFractionsID(int heroesToFractionsID) {
+    public void setHeroesToFractionsID(Long heroesToFractionsID) {
         this.heroesToFractionsID = heroesToFractionsID;
     }
 
-    public void setHeroID(int heroID) {
+    public void setHeroID(Long heroID) {
         this.heroID = heroID;
     }
 
-    public void setFractionID(int fractionID) {
+    public void setFractionID(Long fractionID) {
         this.fractionID = fractionID;
     }
 }
