@@ -1,5 +1,6 @@
 package org.course.aston.repository.impl;
 
+import org.course.aston.entity.Heroes;
 import org.course.aston.entity.HeroesToFractions;
 import org.course.aston.repository.HeroesToFractionsRepository;
 
@@ -25,5 +26,10 @@ public class HeroesToFractionsRepositoryImpl implements HeroesToFractionsReposit
     @Override
     public HeroesToFractions save(HeroesToFractions heroesToFractions) {
         return null;
+    }
+
+    @Override
+    public List<Heroes> getHeroesByFractionID(Long fractionID) {
+        return List.of();
     }
 }

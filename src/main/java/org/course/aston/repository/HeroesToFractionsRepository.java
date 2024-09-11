@@ -1,5 +1,6 @@
 package org.course.aston.repository;
 
+import org.course.aston.entity.Heroes;
 import org.course.aston.entity.HeroesToFractions;
 
 import java.util.List;
@@ -17,4 +18,6 @@ public interface HeroesToFractionsRepository extends Repository<HeroesToFraction
 
     @Override
     HeroesToFractions save(HeroesToFractions heroesToFractions);
+
+    List<Heroes> getHeroesByFractionID(Long fractionID);
 }

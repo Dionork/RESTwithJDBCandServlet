@@ -34,7 +34,7 @@ fraction_id BIGINT REFERENCES wow_db.fractions(fraction_id));
 CREATE TABLE IF NOT EXISTS wow_db.heroes_maxHP
 ( heroes_maxHP_id bigserial PRIMARY KEY,
 hero_id BIGINT REFERENCES wow_db.heroes(hero_id),
-maxHP INT NOT NULL UNIQUE);
+maxHP BIGINT NOT NULL UNIQUE);
 
 INSERT INTO wow_db.heroes (hero_name,hero_lastname, role_name_id)
 VALUES  ('Тралл', 'Огриммаров',  1), --1

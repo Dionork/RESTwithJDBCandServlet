@@ -9,6 +9,7 @@ import java.util.Optional;
 public class FractionsRepositoryImpl implements FractionsRepository {
     @Override
     public Optional<Fractions> findById(Long id) {
+
         return Optional.empty();
     }
 
