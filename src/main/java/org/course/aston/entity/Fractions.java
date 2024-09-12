@@ -11,9 +11,10 @@ public class Fractions {
     private String fractionName;
     private List<Heroes> heroesList;
 
-    public Fractions(Long fractionID, String fractionName) {
+    public Fractions(Long fractionID, String fractionName, List<Heroes> heroesList) {
         this.fractionID = fractionID;
         this.fractionName = fractionName;
+        this.heroesList = heroesList;
     }
 
     public Long getFractionID() {

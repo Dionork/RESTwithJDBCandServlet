@@ -4,13 +4,12 @@ import org.course.aston.entity.Fractions;
 import org.course.aston.repository.FractionsRepository;
 
 import java.util.List;
-import java.util.Optional;
 
 public class FractionsRepositoryImpl implements FractionsRepository {
     @Override
-    public Optional<Fractions> findById(Long id) {
+    public List<Fractions> findById(Long id) {
 
-        return Optional.empty();
+        return List.of();
     }
 
     @Override

@@ -1,8 +1,10 @@
 package org.course.aston.entity;
 
+import org.course.aston.repository.HeroesMaxHPRepository;
 import org.course.aston.repository.impl.FractionsRepositoryImpl;
 import org.course.aston.repository.impl.HeroesMaxHPRepositoryImpl;
 
+import java.util.List;
 import java.util.Optional;
 
 public class Heroes {
@@ -10,10 +12,10 @@ public class Heroes {
     private String heroName;
     private String heroLastname;
     private Roles role;
-    private Optional<HeroesMaxHP> heroesMaxHPList;
-    private Optional<Fractions> fractionsList;
+    private List<HeroesMaxHP> heroesMaxHPList;
+    private List<Fractions> fractionsList;
 
-    public Heroes(Long heroId, String heroName, String heroLastname, Roles role, Optional<HeroesMaxHP> heroesMaxHPList, Optional<Fractions> fractionsList) {
+    public Heroes(Long heroId, String heroName, String heroLastname, Roles role, List<HeroesMaxHP> heroesMaxHPList, List<Fractions> fractionsList) {
         this.heroID = heroId;
         this.heroName = heroName;
         this.heroLastname = heroLastname;
@@ -54,26 +56,21 @@ public class Heroes {
         this.role = role;
     }
 
-    public Optional<HeroesMaxHP> getHeroesMaxHPList() {
+    public List<HeroesMaxHP> getHeroesMaxHPList() {
         if (heroesMaxHPList == null) {
-            this.heroesMaxHPList = new HeroesMaxHPRepositoryImpl().findById(heroID);
+            this.heroesMaxHPList = new HeroesMaxHPRepositoryImpl().findAllByHeroesID(heroID);
         }
         return heroesMaxHPList;
     }
 
-    public void setHeroesMaxHPList(Optional<HeroesMaxHP> heroesMaxHPList) {
+    public void setHeroesMaxHPList(List<HeroesMaxHP> heroesMaxHPList) {
         this.heroesMaxHPList = heroesMaxHPList;
     }
 
-    public Optional<Fractions> getFractionsList() {
+    public List<Fractions> getFractionsList() {
         if (fractionsList == null) {
             this.fractionsList = new FractionsRepositoryImpl().findById(heroID);
         }
         return fractionsList;
     }
-
-    public void setFractionsList(Optional<Fractions> fractionsList) {
-        this.fractionsList = fractionsList;
-    }
-
 }

@@ -1,5 +1,6 @@
 package org.course.aston.repository;
 
+import org.course.aston.entity.Heroes;
 import org.course.aston.entity.HeroesMaxHP;
 
 import java.util.List;
@@ -17,4 +18,6 @@ public interface HeroesMaxHPRepository extends Repository<HeroesMaxHP, Long>{
 
     @Override
     HeroesMaxHP save(HeroesMaxHP heroesMaxHP);
+
+    List<HeroesMaxHP> findAllByHeroesID(Long heroesID);
 }

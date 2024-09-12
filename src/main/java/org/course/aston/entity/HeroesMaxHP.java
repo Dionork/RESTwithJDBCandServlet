@@ -5,10 +5,10 @@ import org.course.aston.repository.impl.HeroesRepositoryImpl;
 public class HeroesMaxHP {
     private Long heroesMaxHpID;
     private Long heroID;
-    private int maxHp;
+    private String maxHp;
     private Heroes heroes;
 
-    public HeroesMaxHP(Long heroesMaxHpID, Long heroID, int maxHp) {
+    public HeroesMaxHP(Long heroesMaxHpID,String maxHp, Heroes heroes) {
         this.heroesMaxHpID = heroesMaxHpID;
         this.heroID = heroID;
         this.maxHp = maxHp;
@@ -22,11 +22,11 @@ public class HeroesMaxHP {
         return heroID;
     }
 
-    public int getMaxHp() {
+    public String getMaxHp() {
         return maxHp;
     }
 
-    public void setMaxHp(int maxHp) {
+    public void setMaxHp(String maxHp) {
         this.maxHp = maxHp;
     }
 
